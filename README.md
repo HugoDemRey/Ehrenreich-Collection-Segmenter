@@ -1,5 +1,5 @@
 # Ehrenreich Collection Segmenter
-[![GitHub release](https://img.shields.io/github/v/release/OWNER/REPO)](https://github.com/OWNER/REPO/releases/latest)
+[![GitHub release](https://img.shields.io/github/v/release/OWNER/REPO)]([https://github.com/HugoDemRey/Ehrenreich-Collection-Segmenter/releases/latest]))
 Automated opera segmentation for the historic Ehrenreich Collection using computational audio analysis techniques.
 
 ## Overview
