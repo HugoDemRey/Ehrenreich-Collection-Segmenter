@@ -12,7 +12,7 @@ This interface is an interactive PyQt6 application that was developed to allow a
 
 ## Full Report
 
-**[📖 Read the Complete Report](https://hugodemrey.github.io/Ehrenreich-Collection-Segmenter/)**
+👉 [Read the Complete Report](https://hugodemrey.github.io/Ehrenreich-Collection-Segmenter/)
 
 ## Download
 
