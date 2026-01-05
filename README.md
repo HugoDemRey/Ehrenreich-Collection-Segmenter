@@ -17,9 +17,6 @@ This interface is an interactive PyQt6 application that was developed to allow a
 ## Download
 
 - 👉 [Latest release](https://github.com/HugoDemRey/Ehrenreich-Collection-Segmenter/releases/latest)
-- All releases: https://github.com/HugoDemRey/Ehrenreich-Collection-Segmenter/releases
-
-
 
 *Semester project by Hugo Demule, supervised by Ioannis Rammos at EPFL DCML.*
 
