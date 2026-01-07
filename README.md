@@ -1,5 +1,7 @@
 # Ehrenreich Collection Segmenter
 
+[![GitHub release](https://img.shields.io/github/v/release/HugoDemRey/Ehrenreich-Collection-Segmenter)](https://github.com/HugoDemRey/Ehrenreich-Collection-Segmenter/releases/latest)
+
 Automated opera segmentation for the historic Ehrenreich Collection using computational audio analysis techniques.
 
 ## Overview
@@ -10,6 +12,12 @@ This interface is an interactive PyQt6 application that was developed to allow a
 
 ## Full Report
 
-**[📖 Read the Complete Report](https://hugodemrey.github.io/Ehrenreich-Collection-Segmenter/)**
+👉 [Read the Complete Report](https://hugodemrey.github.io/Ehrenreich-Collection-Segmenter/)
+
+## Download
+
+👉 [Latest release](https://github.com/HugoDemRey/Ehrenreich-Collection-Segmenter/releases/latest)
 
 *Semester project by Hugo Demule, supervised by Ioannis Rammos at EPFL DCML.*
+
+
