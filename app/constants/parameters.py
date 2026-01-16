@@ -149,7 +149,7 @@ class SilenceParameters(Parameters):
                 max_value=44100,
                 step=1,
                 display_name="Hop Length",
-                description="Step size between successive analysis windows, determining temporal granularity. Its value should logically be ≤ frame_length even though the computation is possible.\n\nIntuition: Smaller values provide finer temporal resolution but increase computational cost. Larger values create smoother curves and reduce computational load, but may miss brief changes.",
+                description="Step size between successive analysis windows, determining temporal granularity. Its value should logically be <= frame_length even though the computation is possible.\n\nIntuition: Smaller values provide finer temporal resolution but increase computational cost. Larger values create smoother curves and reduce computational load, but may miss brief changes.",
             ),
             ParameterOption(
                 name="threshold",
@@ -160,7 +160,7 @@ class SilenceParameters(Parameters):
                 step=0.01,
                 decimals=2,
                 display_name="Threshold",
-                description="Peak detection sensitivity for potential transitions.\n\nIntuition: Higher values (≥0.7) detect only prominent peaks with fewer false positives, but may miss subtle boundaries. Lower values (≤0.4) provide more sensitive detection with higher recall, but generate more false positives.",
+                description="Peak detection sensitivity for potential transitions.\n\nIntuition: Higher values (>=0.7) detect only prominent peaks with fewer false positives, but may miss subtle boundaries. Lower values (<=0.4) provide more sensitive detection with higher recall, but generate more false positives.",
             ),
             ParameterOption(
                 name="min_distance_sec",
@@ -218,7 +218,7 @@ class HRPSParameters(Parameters):
                 max_value=4096,
                 step=1,
                 display_name="Hop Length",
-                description="Step size between successive analysis windows, determining temporal granularity. Its value should logically be ≤ frame_length even though the computation is possible.\n\nIntuition: Smaller values provide finer temporal resolution but increase computational cost. Larger values create smoother curves and reduce computational load, but may miss brief changes.",
+                description="Step size between successive analysis windows, determining temporal granularity. Its value should logically be <= frame_length even though the computation is possible.\n\nIntuition: Smaller values provide finer temporal resolution but increase computational cost. Larger values create smoother curves and reduce computational load, but may miss brief changes.",
             ),
             ParameterOption(
                 name="L_h_frames",
@@ -228,7 +228,7 @@ class HRPSParameters(Parameters):
                 max_value=501,
                 step=2,
                 display_name="Smoothing Window Size",
-                description="Harmonic component temporal smoothing window, controls coherence of harmonic elements (must be odd).\n\nIntuition: Larger values (≥50) provide better isolation of sustained elements (notes/chords), but may blur rapid harmonic changes. Smaller values (≤20) preserve temporal detail but may introduce noise affecting separation quality.",
+                description="Harmonic component temporal smoothing window, controls coherence of harmonic elements (must be odd).\n\nIntuition: Larger values (>=50) provide better isolation of sustained elements (notes/chords), but may blur rapid harmonic changes. Smaller values (<=20) preserve temporal detail but may introduce noise affecting separation quality.",
             ),
             ParameterOption(
                 name="L_p_bins",
@@ -238,7 +238,7 @@ class HRPSParameters(Parameters):
                 max_value=501,
                 step=2,
                 display_name="Pitch Smoothing Size",
-                description="Percussive component frequency smoothing filter, determines percussive isolation across spectrum (must be odd).\n\nIntuition: Larger values (≥100) capture broadband events like applause spanning multiple frequencies, but may merge distinct sources. Smaller values (≤50) preserve frequency resolution for isolated elements but may fragment broadband events.",
+                description="Percussive component frequency smoothing filter, determines percussive isolation across spectrum (must be odd).\n\nIntuition: Larger values (>=100) capture broadband events like applause spanning multiple frequencies, but may merge distinct sources. Smaller values (<=50) preserve frequency resolution for isolated elements but may fragment broadband events.",
             ),
             ParameterOption(
                 name="beta",
@@ -249,7 +249,7 @@ class HRPSParameters(Parameters):
                 step=0.1,
                 decimals=1,
                 display_name="Beta",
-                description="Separation strictness factor controlling harmonic/percussive/residual classification.\n\nIntuition: Higher β values create more selective classification, placing more content in residual component. Values around 2.0 are optimal for applause detection (mixed characteristics). Values >2.5 become too aggressive.",
+                description="Separation strictness factor controlling harmonic/percussive/residual classification.\n\nIntuition: Higher beta values create more selective classification, placing more content in residual component. Values around 2.0 are optimal for applause detection (mixed characteristics). Values >2.5 become too aggressive.",
             ),
             ParameterOption(
                 name="downsampling_factor",
@@ -270,7 +270,7 @@ class HRPSParameters(Parameters):
                 step=0.01,
                 decimals=2,
                 display_name="Threshold",
-                description="Peak detection sensitivity for potential transitions.\n\nIntuition: Higher values (≥0.7) detect only prominent peaks with fewer false positives, but may miss subtle boundaries. Lower values (≤0.4) provide more sensitive detection with higher recall, but generate more false positives.",
+                description="Peak detection sensitivity for potential transitions.\n\nIntuition: Higher values (>=0.7) detect only prominent peaks with fewer false positives, but may miss subtle boundaries. Lower values (<=0.4) provide more sensitive detection with higher recall, but generate more false positives.",
             ),
             ParameterOption(
                 name="min_distance_sec",
@@ -344,7 +344,7 @@ class NCParameters(Parameters):
                 max_value=22050,
                 step=128,
                 display_name="Hop Length",
-                description="Step size between successive analysis windows, determining temporal granularity. Its value should logically be ≤ frame_length even though the computation is possible.\n\nIntuition: Smaller values provide finer temporal resolution but increase computational cost. Larger values create smoother curves and reduce computational load, but may miss brief changes.",
+                description="Step size between successive analysis windows, determining temporal granularity. Its value should logically be <= frame_length even though the computation is possible.\n\nIntuition: Smaller values provide finer temporal resolution but increase computational cost. Larger values create smoother curves and reduce computational load, but may miss brief changes.",
             ),
             ParameterOption(
                 name="normalization_mode",
@@ -362,7 +362,7 @@ class NCParameters(Parameters):
                 max_value=51,
                 step=2,
                 display_name="Smoothing Filter Length",
-                description="Temporal smoothing for noise reduction and pattern enhancement (must be odd).\n\nIntuition: Longer filters (≥21) create smoother trajectories and reduce sensitivity to rapid fluctuations, but may miss brief transitions. Shorter filters (≤11) preserve temporal detail but may introduce noise in SSM computation.",
+                description="Temporal smoothing for noise reduction and pattern enhancement (must be odd).\n\nIntuition: Longer filters (>=21) create smoother trajectories and reduce sensitivity to rapid fluctuations, but may miss brief transitions. Shorter filters (<=11) preserve temporal detail but may introduce noise in SSM computation.",
             ),
             ParameterOption(
                 name="downsampling_factor",
@@ -372,7 +372,7 @@ class NCParameters(Parameters):
                 max_value=50,
                 step=1,
                 display_name="Downsampling Factor",
-                description="Complexity reduction while preserving structural information.\n\nIntuition: Higher factors (≥20) provide significant computation and memory reduction for long recordings, but may lose fine temporal details. Lower factors (≤10) preserve temporal resolution but increase computational cost, ideal for precise transitions.",
+                description="Complexity reduction while preserving structural information.\n\nIntuition: Higher factors (>=20) provide significant computation and memory reduction for long recordings, but may lose fine temporal details. Lower factors (<=10) preserve temporal resolution but increase computational cost, ideal for precise transitions.",
             ),
             ParameterOption(
                 name="log_compression_factor",
@@ -383,7 +383,7 @@ class NCParameters(Parameters):
                 step=1,
                 decimals=1,
                 display_name="Log Compression Factor",
-                description="Gamma value for dynamic range compression, enhances weak components.\n\nIntuition: Higher values (≥10) apply stronger compression and emphasize subtle variations indicating boundaries. Lower values (≤5) preserve original dynamics and maintain contrasts but may miss subtle transitions.",
+                description="Gamma value for dynamic range compression, enhances weak components.\n\nIntuition: Higher values (>=10) apply stronger compression and emphasize subtle variations indicating boundaries. Lower values (<=5) preserve original dynamics and maintain contrasts but may miss subtle transitions.",
             ),
             ParameterOption(
                 name="ssm_smoothing_filter_length",
@@ -412,7 +412,7 @@ class NCParameters(Parameters):
                 step=0.01,
                 decimals=2,
                 display_name="SSM Threshold",
-                description="Similarity threshold for structural contrast enhancement.\n\nIntuition: Higher thresholds (≥0.7) create sparser SSMs with only strong similarities, providing clearer boundaries but may miss subtle transitions. Lower thresholds (≤0.3) include more similarity information but may introduce novelty curve noise.",
+                description="Similarity threshold for structural contrast enhancement.\n\nIntuition: Higher thresholds (>=0.7) create sparser SSMs with only strong similarities, providing clearer boundaries but may miss subtle transitions. Lower thresholds (<=0.3) include more similarity information but may introduce novelty curve noise.",
             ),
             ParameterOption(
                 name="ssm_binarize",
@@ -429,7 +429,7 @@ class NCParameters(Parameters):
                 max_value=150,
                 step=1,
                 display_name="Novelty Curve Kernel Size",
-                description="Gaussian kernel size for novelty detection, controls temporal window for structural changes.\n\nIntuition: Larger kernels (≥50) detect broader changes like major movements or sections but may miss local transitions. Smaller kernels (≤20) are sensitive to rapid changes but may create noisy curves with false positives.",
+                description="Gaussian kernel size for novelty detection, controls temporal window for structural changes.\n\nIntuition: Larger kernels (>=50) detect broader changes like major movements or sections but may miss local transitions. Smaller kernels (<=20) are sensitive to rapid changes but may create noisy curves with false positives.",
             ),
             ParameterOption(
                 name="nc_variance",
@@ -440,7 +440,7 @@ class NCParameters(Parameters):
                 step=0.1,
                 decimals=1,
                 display_name="Novelty Curve Variance",
-                description="Gaussian kernel spread parameter, controls detection window characteristics.\n\nIntuition: Higher variance (≥10) creates broader detection windows that emphasize gradual changes but reduce sensitivity to abrupt transitions. Lower variance (≤5) creates sharper detection windows better for precise moments but more susceptible to noise.",
+                description="Gaussian kernel spread parameter, controls detection window characteristics.\n\nIntuition: Higher variance (>=10) creates broader detection windows that emphasize gradual changes but reduce sensitivity to abrupt transitions. Lower variance (<=5) creates sharper detection windows better for precise moments but more susceptible to noise.",
             ),
             ParameterOption(
                 name="nc_smoothing_sigma",
@@ -451,7 +451,7 @@ class NCParameters(Parameters):
                 step=0.1,
                 decimals=1,
                 display_name="Novelty Curve Smoothing Sigma",
-                description="Final novelty curve Gaussian smoothing to reduce noise and enhance peaks.\n\nIntuition: Higher sigma (≥15) produces very smooth curves with clear broad peaks for major boundaries but may merge close transitions. Lower sigma (≤5) preserves fine temporal details and rapid transitions but may retain noise affecting peak detection.",
+                description="Final novelty curve Gaussian smoothing to reduce noise and enhance peaks.\n\nIntuition: Higher sigma (>=15) produces very smooth curves with clear broad peaks for major boundaries but may merge close transitions. Lower sigma (<=5) preserves fine temporal details and rapid transitions but may retain noise affecting peak detection.",
             ),
             ParameterOption(
                 name="threshold",
@@ -462,7 +462,7 @@ class NCParameters(Parameters):
                 step=0.01,
                 decimals=2,
                 display_name="Threshold",
-                description="Peak detection sensitivity for potential transitions.\n\nIntuition: Higher values (≥0.7) detect only prominent peaks with fewer false positives, but may miss subtle boundaries. Lower values (≤0.4) provide more sensitive detection with higher recall, but generate more false positives.",
+                description="Peak detection sensitivity for potential transitions.\n\nIntuition: Higher values (>=0.7) detect only prominent peaks with fewer false positives, but may miss subtle boundaries. Lower values (<=0.4) provide more sensitive detection with higher recall, but generate more false positives.",
             ),
             ParameterOption(
                 name="min_distance_sec",
@@ -644,7 +644,7 @@ class NCCombinationParameters(Parameters):
                 step=0.01,
                 decimals=2,
                 display_name="Threshold",
-                description="Peak detection sensitivity for potential transitions.\n\nIntuition: Higher values (≥0.7) detect only prominent peaks with fewer false positives, but may miss subtle boundaries. Lower values (≤0.4) provide more sensitive detection with higher recall, but generate more false positives.",
+                description="Peak detection sensitivity for potential transitions.\n\nIntuition: Higher values (>=0.7) detect only prominent peaks with fewer false positives, but may miss subtle boundaries. Lower values (<=0.4) provide more sensitive detection with higher recall, but generate more false positives.",
             ),
             ParameterOption(
                 name="min_distance_sec",
