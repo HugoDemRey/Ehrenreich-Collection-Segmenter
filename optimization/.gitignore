@@ -1,0 +1,7 @@
+/nc_combination/data/*
+/params_optimization/data/*
+/silence_optimization/data/*
+
+/params_optimization/results/*
+/silence_optimization/results/*
+/nc_combination_optimization/results/*

@@ -1,0 +1,23 @@
+data/CHC/*
+data/HKB/*
+data/cache/*
+data/acoustic_brainz/*
+
+deployment/build/*
+deployment/dist-win/*
+deployment/dist-macos/*
+deployment/dist/*
+
+.vscode/
+
+# remove .vscode settings
+.idea/
+
+.venv/
+
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyc
+*.pyd
+*.pdb
