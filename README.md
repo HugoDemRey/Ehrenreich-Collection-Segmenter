@@ -1,5 +1,5 @@
 # Ehrenreich Collection Segmenter
-*Semester project by Hugo Demule, supervised by Dr. Yannis Rammos at EPFL Digital and Cognitive Musicology Lab.*
+*Semester project by Hugo Demule, supervised by Dr. Yannis Rammos at EPFL Digital and Cognitive Musicology Laboratory.*
 
 [![GitHub release](https://img.shields.io/github/v/release/HugoDemRey/Ehrenreich-Collection-Segmenter)](https://github.com/HugoDemRey/Ehrenreich-Collection-Segmenter/releases/latest)
 
