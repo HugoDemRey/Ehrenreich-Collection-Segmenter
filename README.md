@@ -93,7 +93,7 @@ The application follows a clean **Model-View-Controller (MVC)** architecture:
     - `interfaces/`: Abstract interfaces for extensible components
     - `naxos/`: Database integration and web scraping
     - `utils/`: Utility functions and helpers
-- `data/`: Data used for the github pages report (_index.html_)
+- `index_data/`: Data used for the github pages report (_index.html_)
 - `deployment/`: Build scripts for creating executables
 - `optimization/`: Parameter tuning (optuna scripts)
 - `index.html`: Project report homepage (accessible [here](https://hugodemrey.github.io/Ehrenreich-Collection-Segmenter/))
