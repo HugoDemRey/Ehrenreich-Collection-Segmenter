@@ -100,6 +100,7 @@ The application follows a clean **Model-View-Controller (MVC)** architecture:
 
 
 ## Building Executables
+Before trying to build the app, it's important that you install UV and synchronize the project with `uv sync`. This will generate a `.venv` folder that is required for building the application.
 ### Windows 
 To create standalone executables for Windows, run the build script inside the `deployment` folder:
 
