@@ -10,7 +10,7 @@ This project addresses the challenge of automatically segmenting opera recording
 This interface is an interactive PyQt6 application that was developed to allow any user to explore different segmentation methods, tune parameters in real-time, and compare results across multiple approaches.
 
 ## Documentation
-A comprehensive document detailing the methodologies, experiments and results of this project is available online:
+A comprehensive document detailing the methodologies, experiments and results of this project, including video demonstrations of the application and a detailed list of all parameters, is available online:
 
 👉 [Read the Documentation](https://hugodemrey.github.io/Ehrenreich-Collection-Segmenter/)
 
