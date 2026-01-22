@@ -124,4 +124,4 @@ This will generate an executable (.app) in the `deployment/dist-macos` directory
 
 ---
 
-*Semester project by Hugo Demule, supervised by Dr. Yannis Rammos at EPFL Digital and Cognitive Musicology Laboratory.*
+*Semester project by Hugo Demule, supervised by Dr. Yannis Rammos at EPFL Digital and Cognitive Musicology Laboratory. In collaboration with the Hochschule der Künste Bern and the Cultural Heritage & Innovation Center at EPFL.*
