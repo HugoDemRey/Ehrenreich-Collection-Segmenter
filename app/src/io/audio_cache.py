@@ -120,9 +120,9 @@ class AudioCacheManager:
             return
 
         self._initialized = True
-        self._temp_files: Dict[
-            str, dict
-        ] = {}  # temp_path -> {ref_count, source_path, hash}
+        self._temp_files: Dict[str, dict] = (
+            {}
+        )  # temp_path -> {ref_count, source_path, hash}
         self._source_to_temp: Dict[str, str] = {}  # source_path -> temp_path mapping
         self._file_lock = threading.RLock()  # Reentrant lock for nested calls
 
@@ -505,6 +505,9 @@ class AudioCacheManager:
 
             for temp_file in self._temp_dir.iterdir():
                 try:
+                    is_gitkeep = temp_file.name == ".gitkeep"
+                    if is_gitkeep:
+                        continue
                     old_files.append(temp_file)
                 except OSError:
                     # File might be in use or deleted, skip
