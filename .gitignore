@@ -1,7 +1,4 @@
-data/CHC/*
-data/HKB/*
-data/cache/*
-data/acoustic_brainz/*
+data/*
 
 deployment/build/*
 deployment/dist-win/*
